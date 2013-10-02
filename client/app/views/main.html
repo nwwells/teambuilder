@@ -1,0 +1,18 @@
+<section class="person-list-panel">
+  <div class="card"
+       ng-repeat="person in persons"
+       draggable="true">
+    {{ person }}
+  </div>
+  <div class="person-input">
+    <form ng-submit="submit()">
+      <input type="text"
+             class="person-input_text"
+             placeholder="Enter a name here"
+             ng-model="newPerson"></input>
+    </form>
+    <i class="person-input_icon icon-plus-sign-alt"
+       ng-click="submit()">
+    </i>
+  </div>
+</section>
